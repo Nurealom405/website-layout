@@ -1,37 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f3e711b493.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Log-in</title>
     <style>
-        .login-form{
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            
-        }
-        .login-form input{
-            margin-top: 15px;
-            font-size: 1.5em;
-            padding: 5px 10px;
-        }
-        .login-form input[type="submit"]{
-            border: 0;
-            background-color: aquamarine;
-            border-radius: 5px;
-            color: whitesmoke;
-        }
+      .login-form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+      }
+      .login-form input {
+        margin-top: 15px;
+        font-size: 1.5em;
+        padding: 5px 10px;
+      }
+      .login-form input[type="submit"] {
+        border: 0;
+        background-color: goldenrod;
+        border-radius: 5px;
+        color: whitesmoke;
+        font-weight: 700;
+      }
+      .login-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+      }
+      h1 {
+        text-align: center;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
+        margin-right: 20px;
+      }
+      nav {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 40px;
+      }
     </style>
-</head>
-<body>
-    <form class="login-form">
-        <h3>Please Log in</h3>
-        <input type="email" name="email" id="" placeholder="Enter Your email" required>
-        <input type="password" name="password" id="" placeholder="Enter your password" required>
-        <input type="submit" value="Login">
-        <p>test2</p>
-    </form>
-</body>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span>
+          <i
+            class="fa-solid fa-house-chimney fa-beat fa-sm"
+            style="color: #0a0a0a"
+          ></i>
+          <a href="" class="fa-solid fa-beat fa-sm"
+          style="color: #0a0a0a">Home</a>
+          <a href="" class="fa-solid fa-beat fa-sm"
+          style="color: #0a0a0a">About</a>
+          <a href="" class="fa-solid fa-beat fa-sm"
+          style="color: #0a0a0a">Contact</a>
+          <a href="" class="fa-solid fa-beat fa-sm"
+          style="color: #0a0a0a">Help</a>
+        </span>
+        <span>
+          <a href=""><i class="fa-regular fa-user fa-beat-fade"></i></a>
+          <a href=""><i class="fa-solid fa-right-from-bracket fa-beat" style="color:red;"></i></a>
+        </span>
+      </nav>
+    </header>
+    <section class="login-container">
+      <form class="login-form">
+        <h1 class="fa-solid fa-beat fa-sm"
+        style="color: red">Please Log in</h1>
+        <input
+          type="email"
+          name="email"
+          id=""
+          placeholder="Enter Your email"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id=""
+          placeholder="Enter your password"
+          required
+        />
+        <input type="submit" value="Login" />
+      </form>
+    </section>
+  </body>
 </html>
