@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in</title>
+    <style>
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            
+        }
+        .login-form input{
+            margin-top: 15px;
+            font-size: 1.5em;
+            padding: 5px 10px;
+        }
+        .login-form input[type="submit"]{
+            border: 0;
+            background-color: aquamarine;
+            border-radius: 5px;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <form class="login-form">
+        <h3>Please Log in</h3>
+        <input type="email" name="email" id="" placeholder="Enter Your email" required>
+        <input type="password" name="password" id="" placeholder="Enter your password" required>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
