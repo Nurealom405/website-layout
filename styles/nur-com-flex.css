@@ -1,0 +1,31 @@
+img{
+    height: 100%;
+    width: 100%;
+}
+.row{
+    height: 400px;
+    margin-bottom: 5px;
+}
+.second-section, .third-section{
+    display: flex;
+    gap: 5px;
+}
+.second-section-1st-div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.second-section > div {
+    flex: 1;
+}
+.second-section-1st-div div{
+    height: calc(50% - 5px/2);
+}
+.third-section-2nd{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+.third-section > div {
+    flex: 1;
+}
