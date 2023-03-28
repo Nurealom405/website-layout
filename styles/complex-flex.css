@@ -1,5 +1,4 @@
 .row{
-    height: 300px;
     margin-bottom: 5px;
 }
 img{
@@ -29,4 +28,19 @@ img{
 .third-row >div{
     flex: 1;
     /* aita diye sob div ba content k soman jayga nita bola hoy */
+}
+
+@media screen and (max-width: 576px) {
+    .second-row, .third-row{
+        flex-direction: column;
+    }
+    .third-row-second-colm{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+@media screen and (min-width: 577px){
+    .row{
+        height: 300px;
+    }
 }
